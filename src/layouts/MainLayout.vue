@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="app-main-layout">
-      <nav class="navbar orange lighten-1">
+      <nav class="navbar blue">
         <div class="nav-wrapper">
           <div class="navbar-left">
             <a href="#">
