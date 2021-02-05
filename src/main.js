@@ -5,6 +5,8 @@ import router from "./router";
 import dateFilter from "@/filters/date.filter.js";
 import store from "./store";
 import messagePlugin from "@/utils/message.plugin.js";
+import Loader from "@/components/app/Loader.vue";
+import currencyFilter from "@/filters/currency.filter.js";
 import "./registerServiceWorker";
 import "materialize-css/dist/js/materialize.min";
 
@@ -26,8 +28,10 @@ firebase.initializeApp({
 
 Vue.use(Vuelidate);
 Vue.use(messagePlugin);
+Vue.component("Loader", Loader);
 
 Vue.filter("date", dateFilter);
+Vue.filter("currency", currencyFilter);
 
 let app;
 
